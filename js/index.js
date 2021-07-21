@@ -101,16 +101,16 @@ const buildTweets = (tweets, nextPage) => {
 }
 
 const buildImages = (mediaList) => {
-    let imageContent = `<div class="tweet-images-container">`;
+    let imagesContent = `<div class="tweet-images-container">`;
     let imageExists = false;
     mediaList.map((media) => {
         if (media.type == "photo") {
             imageExists = true;
-            imageContent += `<div class= "tweet-image" style="background-image: url(${media.media_url_https})'></div>`
+            imagesContent += `<div class= "tweet-image" style="background-image: url(${media.media_url_https})'></div>`
         }
     });
-    imageContent += `</div>`;
-    return imageExists ? imageContent : '';
+    imagesContent += `</div>`;
+    return imageExists ? imagesContent : '';
 }
 
 const buildVideo = (mediaList) => {
