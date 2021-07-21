@@ -39,6 +39,7 @@ body {
 
 .logo i {
     font-size: 30px;
+    color: blue;
 }
 
 .home-link {
@@ -48,6 +49,7 @@ body {
     border-right: 3px solid #00adff;
     height: 40px;
     margin-top: 20px;
+    font-size: 30px;
 }
 
 .profile-container {
@@ -87,7 +89,7 @@ body {
 }
 
 .tweets-trending {
-    height: 200px;
+    height: 250px;
     background: #f2f2f2;
     margin: 10px;
     border-radius: 40px;
@@ -95,7 +97,8 @@ body {
 }
 
 .tweets-trending h5 {
-    font-size: 12px;
+    margin-left: 20px;
+    font-size: 18px;
     color: #848586;
     margin-top: 0;
     padding-left: 20px;
@@ -103,11 +106,14 @@ body {
 }
 
 .tweets-trending ul li {
+    width: 90%;
+    margin-left: -18px;
     color: #a5a5a6;
     padding: 8px 0 8px 20px;
     border-top: 0.5px solid #d8d8d8;
     font-weight: 600;
     cursor: pointer;
+    list-style-type: none;
 }
 
 .tweets-search-container {

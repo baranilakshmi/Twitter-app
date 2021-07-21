@@ -64,17 +64,17 @@ const buildTweets = (tweets, nextPage) => {
         const createdDate = moment(tweet.created_at).fromNow();
         twitterContent += `
         <div class= "tweet-container">
-           <div class= "tweet-user-info">
-               <div class= "tweet-user-profile" style='background-image: url(${tweet.user.profile_image_url_https})">
-               </div>
-               <div class= "tweet-user-name-container">
-                  <div class= "tweet-user-fullname">
-                  ${tweet.user.name}
-                  </div>
-                  <div class= "tweet-user-username">
-                  ${tweet.user.screen_name}
-                 </div>
-           </div>
+            <div class= "tweet-user-info">
+                <div class= "tweet-user-profile" style="background-image: url(${tweet.user.profile_image_url_https})">
+                </div>
+                <div class= "tweet-user-name-container">
+                    <div class= "tweet-user-fullname">
+                    ${tweet.user.name}
+                    </div>
+                    <div class= "tweet-user-username">
+                    ${tweet.user.screen_name}
+                    </div>
+            </div>
         </div>
         `
         if(tweet.extended_entities && tweet.extended_entities.media.length > 0) {
